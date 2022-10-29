@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.listGroup {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  row-gap: 8px;
+}
+.listMember {
+  padding: 4px;
+}
+
+.listImageHolder {
+  overflow: hidden;
+  border-radius: 8px;
+}
+.listImage {
+  width: 100%;
+  aspect-ratio: 5 / 4;
+  object-fit: cover;
+  vertical-align: bottom;
+  transition: transform 0.2s ease-in-out;
+}
+.listImage:hover {
+  transform: scale(1.1);
+}
+
+.listProduct {
+  padding-top: 8px;
+  font-size: 16px;
+  overflow-wrap: break-word;
+}
+.listPrice {
+  padding-top: 4px;
+  text-align: right;
+  font-size: 16px;
+  overflow-wrap: break-word;
+}
+
+@media screen and (min-width: 320px) {
+  .listMember {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .listMember {
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .listMember {
+    width: calc(100% / 3);
+  }
+}
+
+@media screen and (min-width: 880px) {
+  .listMember {
+    width: calc(100% / 4);
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .listMember {
+    width: calc(100% / 5);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .listMember {
+    width: calc(100% / 6);
+  }
+}
